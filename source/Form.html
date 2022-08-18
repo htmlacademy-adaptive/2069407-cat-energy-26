@@ -6,29 +6,29 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img src="img/logotype-phone.svg" width="32" height="37" alt="Cat Energy logo">
     </a>
-    <a class="main-header__catenergy">
-      <img src="img/logotype-phone-cat.svg" width="101" height="18" alt="Cat Energy logotype">
+    <a class="main-header__catenergy" href="index.html">
+      <img src=".img/logotype-phone-cat.svg" width="101" height="18" alt="Cat Energy logotype">
     </a>
 
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>
+          <li class="site-list__item ">
+            <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a>
+          <li class="site-list__item">
+            <a href="catalog.html">
               каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
-            <a>
+          <li class="site-list__item site-list__item--active">
+            <a href="Form.html">
               подбор программы
             </a>
           </li>
@@ -37,58 +37,64 @@
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="main-container__header">Подбор программы</h1>
-    <section class="questionnaire">
-      <h3 class="questionnaire__title">
-        Заполните анкету, и мы подберем <br>
-        программу питания для вашего кота
-      </h3>
-      <ul class="questionnaire_list">
-        <li class="questionnaire__pet pet-name">
-          <lebel class="questionnaire__lebel" for="name-pet">ИМЯ:*</lebel>
-          <input class="questionnaire__input" type="text" value="барсик">
-        </li>
-        <li class="questionnaire__pet pet-weight">
-          <lebel class="questionnaire__lebel">Вес (кг):*</lebel>
-          <input class="questionnaire__input" type="text" value="7">
-        </li>
-        <li class="questionnaire__pet pet-age">
-          <lebel class="questionnaire__lebel" for="name-pet">Возраст (лет):</lebel>
-          <input class="questionnaire__input" type="text" value="7">
-        </li>
-      </ul>
-      <ul class="questionnaire__list-radio">
-        <li class="questionnaire__rate">
-          <input class="questionnaire__input" type="radio" name="control" id="weight-loss" value="weight-loss" checked>
-          <label class="questionnaire__lebel" for="weight-loss">похудение</lebel>
-        </li>
-        <li class="questionnaire__rate">
-          <input class="questionnaire__input" type="radio" name="control" id="mass-nador" value="mass-nador">
-          <label class="questionnaire__lebel" for="weight-loss">Набор массы</lebel>
-        </li>
-        <li class="questionnaire__rate">
-          <input class="questionnaire__input" type="radio" name="control" id="don't-know" value="don't-know">
-          <label class="questionnaire__lebel" for="weight-loss">Не знаю (Нужен ваш совет)</lebel>
-        </li>
-      </ul>
-    </section>
-    <section class="owner-contacts">
-      <h3 class="owner-contacts__title">Контактные данные (владельца кота)</h3>
-      <ul class="owner-contacts__questionnaire">
-        <li class="owner-contacts__email">
-          <lebel class="questionnaire__lebel" for="email">E-mail:*</lebel>
-          <input class="owner-contacts__input" type="email" id="email" value="кuklachev@gmail.com">
-        </li>
-        <li class="owner-contacts__email">
-          <lebel class="questionnaire__lebel" for="tel">Телефон:*</lebel>
-          <input class="owner-contacts__input" type="tel" id="tel" value="8 (960) 900-60-90">
-        </li>
-      </ul>
-    </section>
-    <section class="comment">
-      <h3 class="owner-contacts__title">Комментарий</h3>
-      <input class="questionnaire__input" type="text" value="Расскажите обо всех повадках кота">
-    </section>
+    <h1 class="main-container__header">
+      Подбор программы
+    </h1>
+    <h3 class="questionnaire__title">
+      Заполните анкету, и мы подберем <br>
+      программу питания для вашего кота
+    </h3>
+    <form class="questionnaire">
+        <fieldset class="questionnaire__pet-info">
+          <ul class="questionnaire__list">
+            <li class="questionnaire__pet pet-name">
+              <label class="questionnaire__label" for="name-pet">ИМЯ:*</label>
+              <input class="questionnaire__input" type="text" id="name-pet" value="барсик">
+            </li>
+            <li class="questionnaire__pet pet-weight">
+              <label class="questionnaire__label" for="weight-pet">Вес (кг):*</label>
+              <input class="questionnaire__input" type="text" value="7" id="weight-pet">
+            </li>
+            <li class="questionnaire__pet pet-age">
+              <label class="questionnaire__label" for="age-pet">Возраст (лет):</label>
+              <input class="questionnaire__input" type="text" value="7" id="age-pet">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="questionnaire__pet-programm">
+          <ul class="questionnaire__list-radio">
+            <li class="questionnaire__rate">
+              <input class="questionnaire__input" type="radio" name="control" id="weight-loss" value="weight-loss" checked>
+              <label class="questionnaire__label" for="weight-loss">похудение</label>
+            </li>
+            <li class="questionnaire__rate">
+              <input class="questionnaire__input" type="radio" name="control" id="mass-nador" value="mass-nador">
+              <label class="questionnaire__label" for="weight-loss">Набор массы</label>
+            </li>
+            <li class="questionnaire__rate">
+              <input class="questionnaire__input" type="radio" name="control" id="don't-know" value="don't-know">
+              <label class="questionnaire__label" for="weight-loss">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="owner-contacts">
+          <h3 class="owner-contacts__title">Контактные данные (владельца кота)</h3>
+          <ul class="owner-contacts__questionnaire">
+            <li class="owner-contacts__email">
+              <label class="owner-contacts__label" for="email">E-mail:*</label>
+              <input class="owner-contacts__input" type="email" id="email" value="кuklachev@gmail.com">
+            </li>
+            <li class="owner-contacts__email">
+              <label class="owner-contacts__label" for="tel">Телефон:*</label>
+              <input class="owner-contacts__input" type="tel" id="tel" value="8 (960) 900-60-90">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="comments">
+          <h3 class="comments__title">Комментарий</h3>
+          <input class="comments__input" type="text" value="Расскажите обо всех повадках кота">
+        </fieldset>
+    </form>
     <section class="additionally">
       <h3 class="additionally__title">Дополнительно</h3>
       <ul class="additionally__list">
@@ -115,9 +121,10 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__diler">
-          <p class="contacts__text">приглашаем
+          <h3 class="contacts__text">приглашаем
             к сотрудничеству
-            дилеров!</p>
+            дилеров!
+          </h3>
         </div>
         <div class="contacts__adress-block">
           <p class="contacts__adress">ул. Большая
@@ -131,8 +138,8 @@
         <img src="img/map-rectangle.svg" width="768" height="400" alt="map">
       </div>
     </section>
-</main>
-<footer class="main-footer">
+  </main>
+  <footer class="main-footer">
   <div class="main-footer__wrapper">
     <div class="main-footer__logo">
       <a class="main-footer__logotype">
@@ -150,12 +157,13 @@
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
         </li>
+      </ul>
     </div>
     <div class="main-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </div>
-</footer>
+  </footer>
 </body>
 </html>
 
