@@ -28,7 +28,7 @@
             </a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="Form.html">
+            <a href="form.html">
               подбор программы
             </a>
           </li>
@@ -40,60 +40,60 @@
     <h1 class="main-container__header">
       Подбор программы
     </h1>
-    <h3 class="questionnaire__title">
-      Заполните анкету, и мы подберем <br>
-      программу питания для вашего кота
-    </h3>
     <form class="questionnaire">
-        <fieldset class="questionnaire__pet-info">
-          <ul class="questionnaire__list">
-            <li class="questionnaire__pet pet-name">
-              <label class="questionnaire__label" for="name-pet">ИМЯ:*</label>
-              <input class="questionnaire__input" type="text" id="name-pet" value="барсик">
-            </li>
-            <li class="questionnaire__pet pet-weight">
-              <label class="questionnaire__label" for="weight-pet">Вес (кг):*</label>
-              <input class="questionnaire__input" type="text" value="7" id="weight-pet">
-            </li>
-            <li class="questionnaire__pet pet-age">
-              <label class="questionnaire__label" for="age-pet">Возраст (лет):</label>
-              <input class="questionnaire__input" type="text" value="7" id="age-pet">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="questionnaire__pet-programm">
-          <ul class="questionnaire__list-radio">
-            <li class="questionnaire__rate">
-              <input class="questionnaire__input" type="radio" name="control" id="weight-loss" value="weight-loss" checked>
-              <label class="questionnaire__label" for="weight-loss">похудение</label>
-            </li>
-            <li class="questionnaire__rate">
-              <input class="questionnaire__input" type="radio" name="control" id="mass-nador" value="mass-nador">
-              <label class="questionnaire__label" for="weight-loss">Набор массы</label>
-            </li>
-            <li class="questionnaire__rate">
-              <input class="questionnaire__input" type="radio" name="control" id="don't-know" value="don't-know">
-              <label class="questionnaire__label" for="weight-loss">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="owner-contacts">
-          <h3 class="owner-contacts__title">Контактные данные (владельца кота)</h3>
-          <ul class="owner-contacts__questionnaire">
-            <li class="owner-contacts__email">
-              <label class="owner-contacts__label" for="email">E-mail:*</label>
-              <input class="owner-contacts__input" type="email" id="email" value="кuklachev@gmail.com">
-            </li>
-            <li class="owner-contacts__email">
-              <label class="owner-contacts__label" for="tel">Телефон:*</label>
-              <input class="owner-contacts__input" type="tel" id="tel" value="8 (960) 900-60-90">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="comments">
-          <h3 class="comments__title">Комментарий</h3>
-          <input class="comments__input" type="text" value="Расскажите обо всех повадках кота">
-        </fieldset>
+      <h3 class="questionnaire__title">
+        Заполните анкету, и мы подберем <br>
+        программу питания для вашего кота
+      </h3>
+      <fieldset class="questionnaire__pet-info">
+        <ul class="questionnaire__list">
+          <li class="questionnaire__pet pet-name">
+            <label class="questionnaire__label" for="name-pet">ИМЯ:*</label>
+            <input class="questionnaire__input" type="text" id="name-pet" value="барсик">
+          </li>
+          <li class="questionnaire__pet pet-weight">
+            <label class="questionnaire__label" for="weight-pet">Вес (кг):*</label>
+            <input class="questionnaire__input" type="text" value="7" id="weight-pet">
+          </li>
+          <li class="questionnaire__pet pet-age">
+            <label class="questionnaire__label" for="age-pet">Возраст (лет):</label>
+            <input class="questionnaire__input" type="text" value="7" id="age-pet">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="questionnaire__pet-programm">
+        <ul class="questionnaire__list-radio">
+          <li class="questionnaire__rate">
+            <input class="questionnaire__input" type="radio" name="control" id="weight-loss" value="weight-loss" checked>
+            <label class="questionnaire__label" for="weight-loss">похудение</label>
+          </li>
+          <li class="questionnaire__rate">
+            <input class="questionnaire__input" type="radio" name="control" id="mass-nador" value="mass-nador">
+            <label class="questionnaire__label" for="weight-loss">Набор массы</label>
+          </li>
+          <li class="questionnaire__rate">
+            <input class="questionnaire__input" type="radio" name="control" id="don't-know" value="don't-know">
+            <label class="questionnaire__label" for="weight-loss">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="owner-contacts">
+        <h3 class="owner-contacts__title">Контактные данные (владельца кота)</h3>
+        <ul class="owner-contacts__questionnaire">
+          <li class="owner-contacts__email">
+            <label class="owner-contacts__label" for="email">E-mail:*</label>
+            <input class="owner-contacts__input" type="email" id="email" value="кuklachev@gmail.com">
+          </li>
+          <li class="owner-contacts__email">
+            <label class="owner-contacts__label" for="tel">Телефон:*</label>
+            <input class="owner-contacts__input" type="tel" id="tel" value="8 (960) 900-60-90">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="comments">
+        <h3 class="comments__title">Комментарий</h3>
+        <textarea class="comments__textarea">Расскажите обо всех повадках кота</textarea>
+      </fieldset>
     </form>
     <section class="additionally">
       <h3 class="additionally__title">Дополнительно</h3>
