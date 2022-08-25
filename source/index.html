@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>"Cat Energy"</title>
+  <link href="/css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -14,21 +16,21 @@
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+            <a class="main-nav__link link-nav__index" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="main-nav__link link-nav__catalog" href="catalog.html">
               каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="main-nav__link link-nav__form" href="form.html">
               подбор программы
             </a>
           </li>
@@ -37,10 +39,12 @@
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="main-container__header">Функциональное питание для котов</h1>
-    <h4 class="main-container__text">Занялся собой? Займись котом!</h4>
-    <button class="main-container__toggle" type="button">Подобрать программу</button>
-    <img src="img/logotype-phone.svg" width="552" height="499" alt="Cat Energy feed">
+    <section class="main-container__section">
+      <h1 class="main-container__header">Функциональное <br> питание для котов</h1>
+      <h4 class="main-container__text">Занялся собой? Займись котом!</h4>
+      <button class="main-container__toggle" type="button">Подобрать программу</button>
+      <img src="img/logotype-phone.svg" width="552" height="499" alt="Cat Energy feed">
+    </section>
     <section class="weight">
       <ul class="weight-list">
         <li class="weight-list__item">
@@ -112,37 +116,41 @@
           </li>
         </ul>
     </section>
-    <section class="exemple">
-      <h2 class="exemple__caption">
+    <section class="example">
+      <h2 class="example__caption">
         Живой пример
       </h2>
-      <div class="exemple__text-wrapper">
-        <p class="exemple__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-      </div>
-      <div class="exemple__weight">
-        <h3>5 КГ</h3>
-        <p class="exemple__weight-min">снижение веса</p>
-      </div>
-      <div class="exemple__day">
-        <h3>60 дней</h3>
-        <p class="exemple__day-max">затрачено времени</p>
-      </div>
-      <div class="exemple__price">
-        <p>затраты на питание:</p>
-        <p>15 000 руб.</p>
-      </div>
-      <div class="exemple__slider">
-        <div class="exemple__slider-fatcat">
-          <img src="img/fat-cat.svg" width="560" height="512" alt="fat cat">
+      <div class="example__block-wrapper">
+        <div class="example__text-wrapper">
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
         </div>
-        <div class="exemple__slider-slimcat">
-          <img src="img/slim-cat.svg" width="560" height="512" alt="slim cat">
+        <div class="example__weight-day-wrapper">
+          <div class="example__weight">
+            <h3 class="example__title">5 КГ</h3>
+            <p class="example__p weight-min">снижение веса</p>
+          </div>
+          <div class="example__day">
+            <h3 class="example__title">60 дней</h3>
+            <p class="example__p day-max">затрачено времени</p>
+          </div>
+          <div class="example__price">
+            <p>затраты на питание:</p>
+            <p>15 000 руб.</p>
+          </div>
         </div>
-        <div class="exemple__slider-button">
-          <button class="exemple__slider-circle"></button>
-        </div>
+      </div>
+    </div>
+    <div class="example__slider">
+      <div class="example__slider-fatcat">
+        <img src="img/fat-cat.svg" width="560" height="512" alt="fat cat">
+      </div>
+      <div class="example__slider-slimcat">
+        <img src="img/slim-cat.svg" width="560" height="512" alt="slim cat">
+      </div>
+      <div class="example__slider-button">
+        <button class="example__slider-circle"></button>
       </div>
     </section>
     <section class="contacts">
