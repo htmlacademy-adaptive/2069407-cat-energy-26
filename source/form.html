@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>"Cat Energy"</title>
+  <link href="/css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -18,17 +19,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item ">
-            <a href="index.html">
+            <a class="main-nav__link main-nav__mod link-nav__index" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="main-nav__link main-nav__mod link-nav__catalog" href="catalog.html">
               каталог продукции
             </a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="form.html">
+            <a class="main-nav__link main-nav__mod link-nav__form" href="form.html">
               подбор программы
             </a>
           </li>
@@ -36,57 +37,59 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
-    <h1 class="main-container__header">
+  <main class="main-container main-container__mod">
+    <h1 class="main-container__header header-title__form">
       Подбор программы
     </h1>
     <form class="questionnaire">
-      <h3 class="questionnaire__title">
+      <h3 class="questionnaire__title ">
         Заполните анкету, и мы подберем <br>
         программу питания для вашего кота
       </h3>
-      <fieldset class="questionnaire__pet-info">
-        <ul class="questionnaire__list">
-          <li class="questionnaire__pet pet-name">
-            <label class="questionnaire__label" for="name-pet">ИМЯ:*</label>
-            <input class="questionnaire__input" type="text" id="name-pet" value="барсик">
-          </li>
-          <li class="questionnaire__pet pet-weight">
-            <label class="questionnaire__label" for="weight-pet">Вес (кг):*</label>
-            <input class="questionnaire__input" type="text" value="7" id="weight-pet">
-          </li>
-          <li class="questionnaire__pet pet-age">
-            <label class="questionnaire__label" for="age-pet">Возраст (лет):</label>
-            <input class="questionnaire__input" type="text" value="7" id="age-pet">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="questionnaire__pet-programm">
-        <ul class="questionnaire__list-radio">
-          <li class="questionnaire__rate">
-            <input class="questionnaire__input" type="radio" name="control" id="weight-loss" value="weight-loss" checked>
-            <label class="questionnaire__label" for="weight-loss">похудение</label>
-          </li>
-          <li class="questionnaire__rate">
-            <input class="questionnaire__input" type="radio" name="control" id="mass-nador" value="mass-nador">
-            <label class="questionnaire__label" for="weight-loss">Набор массы</label>
-          </li>
-          <li class="questionnaire__rate">
-            <input class="questionnaire__input" type="radio" name="control" id="don't-know" value="don't-know">
-            <label class="questionnaire__label" for="weight-loss">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="questionnaire__input-div">
+        <fieldset class="questionnaire__pet-info">
+          <ul class="questionnaire__list">
+            <li class="questionnaire__pet pet-name">
+              <label class="questionnaire__label" for="name-pet">ИМЯ:*</label>
+              <input class="questionnaire__input input-name" type="text" id="name-pet" value="барсик">
+            </li>
+            <li class="questionnaire__pet pet-weight">
+              <label class="questionnaire__label" for="weight-pet">Вес (кг):*</label>
+              <input class="questionnaire__input input-weight" type="text" value="7" id="weight-pet">
+            </li>
+            <li class="questionnaire__pet pet-age">
+              <label class="questionnaire__label" for="age-pet">Возраст (лет):</label>
+              <input class="questionnaire__input input-age" type="text" value="7" id="age-pet">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="questionnaire__pet-programm">
+          <ul class="questionnaire__list-radio">
+            <li class="questionnaire__rate">
+              <input class="questionnaire__input" type="radio" name="control" id="weight-loss" value="weight-loss" checked>
+              <label class="questionnaire__label label_radio" for="weight-loss">похудение</label>
+            </li>
+            <li class="questionnaire__rate">
+              <input class="questionnaire__input" type="radio" name="control" id="mass-nador" value="mass-nador">
+              <label class="questionnaire__label label_radio" for="weight-loss">Набор массы</label>
+            </li>
+            <li class="questionnaire__rate">
+              <input class="questionnaire__input" type="radio" name="control" id="don't-know" value="don't-know">
+              <label class="questionnaire__label label_radio" for="weight-loss">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="owner-contacts">
         <h3 class="owner-contacts__title">Контактные данные (владельца кота)</h3>
         <ul class="owner-contacts__questionnaire">
           <li class="owner-contacts__email">
-            <label class="owner-contacts__label" for="email">E-mail:*</label>
-            <input class="owner-contacts__input" type="email" id="email" value="кuklachev@gmail.com">
+            <label class="owner-contacts__label label-email" for="email">E-mail:*</label>
+            <input class="owner-contacts__input input-email" type="email" id="email" value="кuklachev@gmail.com">
           </li>
-          <li class="owner-contacts__email">
-            <label class="owner-contacts__label" for="tel">Телефон:*</label>
-            <input class="owner-contacts__input" type="tel" id="tel" value="8 (960) 900-60-90">
+          <li class="owner-contacts__tel">
+            <label class="owner-contacts__label label-tel" for="tel">Телефон:*</label>
+            <input class="owner-contacts__input input-tel" type="tel" id="tel" value="8 (960) 900-60-90">
           </li>
         </ul>
       </fieldset>
@@ -115,11 +118,13 @@
           <label class="control" for="vitamins">витамины</label>
         </li>
       </ul>
-      <button class="additionally_button button">отправить заявку</button>
-      <p class="additionally__footnote">* — Обязательные поля</p>
+      <div class="additionally__footnote-button">
+        <button class="additionally_button button">отправить заявку</button>
+        <p class="additionally__footnote">* — Обязательные поля</p>
+      </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper position_form">
         <div class="contacts__diler">
           <h3 class="contacts__text">приглашаем
             к сотрудничеству
@@ -127,15 +132,13 @@
           </h3>
         </div>
         <div class="contacts__adress-block">
-          <p class="contacts__adress">ул. Большая
-            Конюшенная, д. 19/8
-
-
-            Санкт-Петербург</p>
+          <p class="contacts__adress">ул. Большая <br>
+            Конюшенная, д. 19/8</p>
+          <p class="contacts__city">Санкт-Петербург</p>
         </div>
       </div>
       <div class="contacts__map">
-        <img src="img/map-rectangle.svg" width="768" height="400" alt="map">
+        <img src="../img/map_comp.png" width="1440" height="400" alt="map">
       </div>
     </section>
   </main>
