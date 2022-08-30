@@ -9,11 +9,20 @@
   list-style: none;
 }
 
-.catalog-list__label{
+.catalog-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-list__label {
   display: flex;
   // flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 35.5px 33px 40.5px;
+  margin: 0 35px 33px 39px;
+}
+
+.catalog-label__margin-top{
+  margin-top: 158px;
 }
 
 .catalog-list__item {
@@ -99,4 +108,18 @@
 .list-item__border {
   background-color: #ffffff;
   border: 2px solid #F2F2F2;
+}
+
+.catalog-discripttion__width {
+  width: 170px;
+  text-align: center;
+}
+
+.order__show-all {
+  text-align: center;
+  width: 169px;
+  height: 40px;
+  background-color: #F2F2F2;
+  margin-top: 49px;
+  text-transform: uppercase;
 }
