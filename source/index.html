@@ -3,17 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>"Cat Energy"</title>
   <link href="/css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img src="img/logotype-phone.svg" width="32" height="37" alt="Cat Energy logo">
-    </a>
-    <a class="main-header__catenergy" href="index.html">
-      <img src=".img/logotype-phone-cat.svg" width="101" height="18" alt="Cat Energy logotype">
-    </a>
+    <div class="main-header__logotype">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" width="32" height="37" alt="Cat Energy logo">
+      </a>
+      <a class="main-header__catenergy" href="index.html">
+        <img src="img/logotype-cat.svg" width="101" height="18" alt="Cat Energy logotype">
+      </a>
+    </div>
 
     <nav class="main-nav">
       <button class="main-nav__toggle visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -144,10 +147,10 @@
         </div>
         <div class="example__slider">
           <div class="example__slider-fatcat">
-            <img src="../img/fat-cat.png" width="330" height="512" alt="fat cat">
+            <img class="example__slider-fatcat-img" src="../img/fat-cat.png" alt="fat cat">
           </div>
           <div class="example__slider-slimcat">
-            <img src="../img/slim-cat.png" width="330" height="512" alt="slim cat">
+            <img class="example__slider-slimcat-img" src="../img/slim-cat.png" alt="slim cat">
           </div>
           <div class="example__slider-button">
             <button class="example__slider-circle"></button>
@@ -170,7 +173,7 @@
         </div>
       </div>
       <div class="contacts__map">
-        <img src="../img/map_comp.png" width="1440" height="400" alt="map">
+        <img class="contacts__image" src="../img/map_comp.png"  alt="map">
       </div>
     </section>
   </main>
